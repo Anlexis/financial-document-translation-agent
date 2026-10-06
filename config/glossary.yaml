@@ -1,0 +1,233 @@
+# FIN-C2-008 — Financial Terminology Glossary
+#
+# Purpose: Cross-language financial term alignment for TerminologyValidationNode.
+# Format: each entry maps a source-language term to the expected English translation.
+# Used by TerminologyValidationNode for advisory terminology validation.
+#
+# Extension guide:
+#   - Add entries under `terms:` as {source: ..., target: ...} pairs.
+#   - `source` is the term as it appears in the source document (Japanese/Chinese/etc.)
+#   - `target` is the expected English translation in the translated output.
+#   - Validation is case-insensitive substring search.
+#   - Flags are ADVISORY only — mismatches do not block translation output.
+
+metadata:
+  version: "1.0.0"
+  template_id: "FIN-C2-008"
+  supported_source_languages:
+    - "ja"
+    - "zh"
+    - "zh-cn"
+    - "zh-tw"
+    - "ko"
+
+terms:
+  # ── Japanese → English ──────────────────────────────────────────────────────
+  - source: "株式"
+    target: "stock"
+    category: "equity"
+
+  - source: "普通株式"
+    target: "common stock"
+    category: "equity"
+
+  - source: "優先株式"
+    target: "preferred stock"
+    category: "equity"
+
+  - source: "債券"
+    target: "bond"
+    category: "fixed_income"
+
+  - source: "国債"
+    target: "government bond"
+    category: "fixed_income"
+
+  - source: "社債"
+    target: "corporate bond"
+    category: "fixed_income"
+
+  - source: "配当"
+    target: "dividend"
+    category: "equity"
+
+  - source: "配当金"
+    target: "dividend payment"
+    category: "equity"
+
+  - source: "投資信託"
+    target: "investment trust"
+    category: "fund"
+
+  - source: "有価証券"
+    target: "securities"
+    category: "general"
+
+  - source: "決算"
+    target: "financial settlement"
+    category: "accounting"
+
+  - source: "財務諸表"
+    target: "financial statements"
+    category: "accounting"
+
+  - source: "損益計算書"
+    target: "income statement"
+    category: "accounting"
+
+  - source: "貸借対照表"
+    target: "balance sheet"
+    category: "accounting"
+
+  - source: "キャッシュフロー"
+    target: "cash flow"
+    category: "accounting"
+
+  - source: "キャッシュフロー計算書"
+    target: "cash flow statement"
+    category: "accounting"
+
+  - source: "資産運用"
+    target: "asset management"
+    category: "investment"
+
+  - source: "リスク管理"
+    target: "risk management"
+    category: "risk"
+
+  - source: "コンプライアンス"
+    target: "compliance"
+    category: "regulatory"
+
+  - source: "デューデリジェンス"
+    target: "due diligence"
+    category: "investment"
+
+  - source: "株主総会"
+    target: "shareholders meeting"
+    category: "governance"
+
+  - source: "取締役会"
+    target: "board of directors"
+    category: "governance"
+
+  - source: "代表取締役"
+    target: "representative director"
+    category: "governance"
+
+  - source: "純資産"
+    target: "net assets"
+    category: "accounting"
+
+  - source: "自己資本"
+    target: "equity capital"
+    category: "accounting"
+
+  - source: "負債"
+    target: "liabilities"
+    category: "accounting"
+
+  - source: "流動資産"
+    target: "current assets"
+    category: "accounting"
+
+  - source: "固定資産"
+    target: "fixed assets"
+    category: "accounting"
+
+  - source: "売上高"
+    target: "revenue"
+    category: "accounting"
+
+  - source: "営業利益"
+    target: "operating profit"
+    category: "accounting"
+
+  - source: "経常利益"
+    target: "ordinary profit"
+    category: "accounting"
+
+  - source: "当期純利益"
+    target: "net income"
+    category: "accounting"
+
+  - source: "EPS"
+    target: "earnings per share"
+    category: "equity"
+
+  - source: "PER"
+    target: "price-to-earnings ratio"
+    category: "equity"
+
+  - source: "PBR"
+    target: "price-to-book ratio"
+    category: "equity"
+
+  - source: "ROE"
+    target: "return on equity"
+    category: "performance"
+
+  - source: "ROA"
+    target: "return on assets"
+    category: "performance"
+
+  # ── Chinese (Simplified) → English ──────────────────────────────────────────
+  - source: "股票"
+    target: "stock"
+    category: "equity"
+
+  - source: "债券"
+    target: "bond"
+    category: "fixed_income"
+
+  - source: "分红"
+    target: "dividend"
+    category: "equity"
+
+  - source: "资产"
+    target: "asset"
+    category: "accounting"
+
+  - source: "负债"
+    target: "liability"
+    category: "accounting"
+
+  - source: "净资产"
+    target: "net assets"
+    category: "accounting"
+
+  - source: "合规"
+    target: "compliance"
+    category: "regulatory"
+
+  - source: "尽职调查"
+    target: "due diligence"
+    category: "investment"
+
+  - source: "财务报表"
+    target: "financial statements"
+    category: "accounting"
+
+  - source: "利润表"
+    target: "income statement"
+    category: "accounting"
+
+  - source: "资产负债表"
+    target: "balance sheet"
+    category: "accounting"
+
+  - source: "现金流量表"
+    target: "cash flow statement"
+    category: "accounting"
+
+  - source: "净利润"
+    target: "net profit"
+    category: "accounting"
+
+  - source: "营业收入"
+    target: "operating revenue"
+    category: "accounting"
+
+  - source: "风险管理"
+    target: "risk management"
+    category: "risk"
